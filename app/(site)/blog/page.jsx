@@ -12,10 +12,18 @@ export const metadata = {
     title: "Blog – Gestión de Residuos | Clean Pack",
     description:
       "Conoce más sobre separación de residuos, planes colectivos y responsabilidad extendida del productor.",
-    url: "https://tusitio.com/blogs",
+    url: "https://kelab.com.co/blogs", // tu dominio real
     type: "website",
     images: ["/og-blog.jpg"],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog – Gestión de Residuos | Clean Pack",
+    description:
+      "Artículos sobre sostenibilidad, economía circular y gestión ambiental.",
+    images: ["/og-blog.jpg"],
+  },
+
   twitter: {
     card: "summary_large_image",
     title: "Blog – Gestión de Residuos | Clean Pack",

@@ -59,6 +59,8 @@ export default function ServiceCoworkersCloudClient() {
           >
             <Link
               href="/co-workers-cloud"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#45C93E] hover:bg-[#399334] text-[#00134f] px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition"
             >
               Ingresar al Centro Comercial

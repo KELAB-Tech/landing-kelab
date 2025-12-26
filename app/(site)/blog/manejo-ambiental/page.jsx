@@ -7,35 +7,33 @@ export const metadata = {
   title:
     "Plan de Manejo Ambiental | Requisitos, Documentos y Trámite | Clean Pack",
   description:
-    "Conoce qué es un Plan de Manejo Ambiental, quiénes deben tramitarlo y qué documentos son necesarios según el Decreto 1076 de 2015.",
+    "Descubre qué es un Plan de Manejo Ambiental (PMA), quiénes deben tramitarlo y qué documentos son necesarios según el Decreto 1076 de 2015 en Colombia.",
   keywords:
     "plan de manejo ambiental, PMA, Decreto 1076 de 2015, requisitos PMA, normativa ambiental Colombia, documentos PMA, impacto ambiental, Clean Pack",
-
   openGraph: {
     title: "Plan de Manejo Ambiental | Clean Pack",
     description:
-      "Guía completa sobre qué es un Plan de Manejo Ambiental y qué documentos exige la normativa ambiental colombiana.",
-    url: "https://www.tu-dominio.com/blogs/plan-manejo-ambiental",
+      "Guía completa sobre el Plan de Manejo Ambiental: qué es, quién debe tramitarlo y los documentos requeridos según la normativa ambiental colombiana.",
+    url: "https://kelab.com.co/blogs/plan-manejo-ambiental",
     type: "article",
     images: [
       {
-        url: "https://www.tu-dominio.com/static/plan-manejo-ambiental.jpg",
+        url: "https://kelab.com.co/static/plan-manejo-ambiental.jpg",
         width: 1200,
         height: 630,
+        alt: "Documentos y trámite del Plan de Manejo Ambiental",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Plan de Manejo Ambiental | Clean Pack",
     description:
-      "Requisitos, documentos y trámite de un Plan de Manejo Ambiental según el Decreto 1076 de 2015.",
-    images: ["https://www.tu-dominio.com/static/plan-manejo-ambiental.jpg"],
+      "Conoce los requisitos, documentos y el trámite del Plan de Manejo Ambiental (PMA) según el Decreto 1076 de 2015 en Colombia.",
+    images: ["https://kelab.com.co/static/plan-manejo-ambiental.jpg"],
   },
-
   alternates: {
-    canonical: "https://www.tu-dominio.com/blogs/plan-manejo-ambiental",
+    canonical: "https://kelab.com.co/blogs/plan-manejo-ambiental",
   },
 };
 
@@ -65,11 +63,12 @@ export default function ManejoAmbiental() {
         {/* ------------------ INTRO ------------------ */}
         <div className="space-y-6 text-lg leading-relaxed text-justify">
           <p>
-            Es el conjunto detallado de actividades orientadas a prevenir,
-            mitigar, corregir o compensar los impactos ambientales generados por
-            un proyecto, obra o actividad. Incluye planes de seguimiento,
-            monitoreo, contingencia y abandono según la naturaleza del proyecto
-            (Decreto 1220 de 2015).
+            Es el conjunto detallado de actividades que, producto de una
+            evaluación ambiental, están orientadas a prevenir, mitigar, corregir
+            o compensar los impactos ambientales generados por un proyecto, obra
+            o actividad. Incluye los planes de seguimiento, monitoreo,
+            contingencia y abandono, según la naturaleza del proyecto. (Decreto
+            1220 de 2015)
           </p>
 
           <p className="font-semibold text-red-600">

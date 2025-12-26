@@ -5,20 +5,33 @@ import { Leaf } from "lucide-react";
 export const metadata = {
   title: "Planes Colectivos de Envases y Empaques en Colombia | Clean Pack",
   description:
-    "Conoce qué son los Planes Colectivos de Envases y Empaques en Colombia, su origen, regulación, operación y cómo contribuyen al reciclaje, la responsabilidad compartida y la economía circular.",
+    "Descubre qué son los Planes Colectivos de Envases y Empaques en Colombia, su regulación, operación y cómo impulsan el reciclaje, la responsabilidad compartida y la economía circular.",
   keywords:
     "planes colectivos, envases y empaques, resolución 1407, reciclaje, aprovechamiento de residuos, economía circular, responsabilidad extendida del productor, REP, Clean Pack",
   openGraph: {
     title: "Planes Colectivos de Envases y Empaques en Colombia | Clean Pack",
     description:
-      "Conoce qué son los Planes Colectivos de Envases y Empaques en Colombia, su origen, regulación, operación y cómo contribuyen al reciclaje, la responsabilidad compartida y la economía circular.",
+      "Guía completa sobre los Planes Colectivos de Envases y Empaques en Colombia: origen, regulación, operación y su impacto en la economía circular y el reciclaje.",
     type: "article",
-    url: "https://www.tu-dominio.com/blogs/planes-colectivos",
+    url: "https://kelab.com.co/blogs/planes-colectivos",
     images: [
       {
-        url: "https://www.tu-dominio.com/static/planes-colectivos.jpg",
+        url: "https://kelab.com.co/static/planes-colectivos.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Planes Colectivos de Envases y Empaques en Colombia",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Planes Colectivos de Envases y Empaques en Colombia | Clean Pack",
+    description:
+      "Aprende sobre los Planes Colectivos de Envases y Empaques en Colombia y cómo contribuyen al reciclaje y la economía circular.",
+    images: ["https://kelab.com.co/static/planes-colectivos.jpg"],
+  },
+  alternates: {
+    canonical: "https://kelab.com.co/blogs/planes-colectivos",
   },
 };
 

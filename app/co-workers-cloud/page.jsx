@@ -21,10 +21,10 @@ export default function CoWorkersCloudHome() {
   return (
     <section className="relative min-h-screen">
       <HeroCloud />
-      <AssociatedCompanies />
-      <CloudServices />
-      <CloudCategories />
       <CloudClosing />
+      <CloudCategories />
+      <CloudServices />
+      <AssociatedCompanies />
     </section>
   );
 }

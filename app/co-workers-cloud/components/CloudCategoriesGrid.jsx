@@ -5,23 +5,34 @@ const categories = [
   {
     title: "Asociaciones de Reciclaje",
     description:
-      "Organizaciones que recuperan, clasifican y comercializan materiales reciclables.",
+      "Organizaciones y cooperativas que recuperan, clasifican y comercializan materiales reciclables.",
     icon: Users,
-    href: "/Co-Workers-Cloud/categorias/asociaciones",
+    href: "/co-workers-cloud/categorias/asociaciones",
+    accent: "#45C93E",
   },
   {
     title: "Gestores Ambientales",
     description:
-      "Empresas especializadas en recolección, transporte y gestión de residuos.",
+      "Empresas especializadas en recolección, transporte y gestión integral de residuos.",
     icon: Truck,
-    href: "/Co-Workers-Cloud/categorias/gestores",
+    href: "/co-workers-cloud/categorias/gestores",
+    accent: "#000180",
   },
   {
     title: "Transformadores",
     description:
       "Industrias que convierten residuos en nuevos productos y materias primas.",
     icon: Factory,
-    href: "/Co-Workers-Cloud/categorias/transformadores",
+    href: "/co-workers-cloud/categorias/transformadores",
+    accent: "#2c2f9e",
+  },
+  {
+    title: "Empresas Transportadoras",
+    description:
+      "Empresas dedicadas al transporte especializado de materiales reciclables y residuos.",
+    icon: Truck,
+    href: "/co-workers-cloud/categorias/transportadoras",
+    accent: "#45C93E",
   },
 ];
 

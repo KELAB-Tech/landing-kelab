@@ -6,14 +6,25 @@ import Contact from "@/app/(site)/components/sections/Contact";
 import Aliados from "@/app/(site)/components/sections/Aliados";
 import Innovation from "@/app/(site)/components/sections/Innovation";
 
-// Metadata completo para App Router
+// ===================== META SEO HOME NIVEL DIOS =====================
 export const metadata = {
-  title: "Inicio | R&R Kelab S.A.S",
+  title:
+    "R&R Kelab S.A.S | Gestión Integral de Residuos y Sostenibilidad en Colombia",
   description:
-    "R&R Kelab S.A.S ofrece soluciones sostenibles para la gestión de residuos, economía circular y cumplimiento normativo en Colombia.",
-  keywords:
-    "gestión de residuos, economía circular, sostenibilidad, reciclaje, responsabilidad extendida, Colombia, R&R Kelab",
-  authors: [{ name: "R&R Kelab S.A.S" }],
+    "R&R Kelab S.A.S ofrece soluciones sostenibles para la gestión de residuos, economía circular, cumplimiento normativo y consultoría ambiental en Colombia.",
+  keywords: [
+    "gestión de residuos",
+    "economía circular",
+    "sostenibilidad",
+    "reciclaje",
+    "responsabilidad extendida",
+    "consultoría ambiental",
+    "cumplimiento normativo",
+    "R&R Kelab",
+    "innovación ambiental",
+    "trazabilidad de residuos",
+  ],
+  authors: [{ name: "R&R Kelab S.A.S", url: "https://kelab.com.co" }],
   robots: "index, follow",
   icons: {
     icon: "/favicon.ico",
@@ -21,23 +32,33 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "R&R Kelab S.A.S | Gestión Integral de Residuos",
+    title: "R&R Kelab S.A.S | Gestión Integral de Residuos y Economía Circular",
     description:
-      "Soluciones ambientales sostenibles para empresas en Colombia.",
+      "Soluciones ambientales sostenibles, innovadoras y completas para empresas en Colombia, optimizando la gestión de residuos y la economía circular.",
     url: "https://kelab.com.co/",
     type: "website",
-    images: ["https://kelab.com.co/preview.jpg"],
+    images: [
+      {
+        url: "https://kelab.com.co/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "R&R Kelab S.A.S – Gestión Integral de Residuos",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "R&R Kelab S.A.S | Gestión Integral de Residuos",
+    title: "R&R Kelab S.A.S | Gestión Integral de Residuos y Sostenibilidad",
     description:
-      "Soluciones ambientales sostenibles para empresas en Colombia.",
+      "Soluciones sostenibles e innovadoras para la gestión integral de residuos y economía circular en Colombia.",
     images: ["https://kelab.com.co/preview.jpg"],
   },
   alternates: {
     canonical: "https://kelab.com.co/",
   },
+  publisher: "R&R Kelab",
+  category:
+    "Inicio, Servicios, Gestión de Residuos, Economía Circular, Consultoría Ambiental",
 };
 
 export default function Home() {
@@ -59,7 +80,7 @@ export default function Home() {
               "https://twitter.com/KelabCo",
             ],
             description:
-              "Soluciones ambientales innovadoras y sostenibles para la gestión de residuos en Colombia.",
+              "Soluciones ambientales innovadoras, sostenibles y completas para la gestión integral de residuos y economía circular en Colombia.",
           }),
         }}
       />

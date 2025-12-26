@@ -12,14 +12,28 @@ export const metadata = {
     title:
       "Plan de Contingencia | Qué es, Contenido y Presentación | Clean Pack",
     description:
-      "Guía completa sobre qué es un Plan de Contingencia, cuál es su contenido mínimo y ante qué autoridad ambiental debe ser presentado.",
+      "Guía completa sobre qué es un Plan de Contingencia, su contenido mínimo y ante qué autoridad ambiental debe presentarse en Colombia.",
     type: "article",
-    url: "https://www.tu-dominio.com/blog/plan-de-contingencia",
+    url: "https://kelab.com.co/blog/plan-de-contingencia",
     images: [
       {
-        url: "https://www.tu-dominio.com/static/plan-de-contingencia.jpg",
+        url: "https://kelab.com.co/static/plan-de-contingencia.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Plan de Contingencia Colombia",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Plan de Contingencia | Qué es, Contenido y Presentación | Clean Pack",
+    description:
+      "Conoce la importancia de un Plan de Contingencia, su contenido obligatorio y cómo presentarlo ante la autoridad ambiental en Colombia.",
+    images: ["https://kelab.com.co/static/plan-de-contingencia.jpg"],
+  },
+  alternates: {
+    canonical: "https://kelab.com.co/blog/plan-de-contingencia",
   },
 };
 
@@ -48,15 +62,24 @@ export default function PlanDeContingencia() {
           <p>
             Tal como su nombre lo indica, el Plan de Contingencias corresponde a
             una serie de pasos a seguir en caso de que se materialice una
-            situación de riesgo previamente identificada...
+            situación de riesgo previamente identificada. Antes, cuando ocurrían
+            accidentes o desastres naturales, las organizaciones sufrían
+            pérdidas humanas y económicas difíciles de recuperar, incluso
+            llevando al cese de operaciones.
           </p>
           <p>
             Estas situaciones se presentaban a causa de que no se había previsto
-            la ocurrencia de un accidente...
+            la ocurrencia de un accidente, en la actualidad, las organizaciones
+            prefieren planificar todo muy bien desde antes de iniciar operación
+            con el fin de que no sean advertidos por situaciones inesperadas en
+            las cuales no haya respuesta.
           </p>
           <p>
             Los Planes de Contingencia permiten recopilar información de todos
-            los procesos de la organización...
+            los procesos de la organización y determinar mediante un estudio
+            realizado por expertos, cuáles de ellos deben priorizarse de acuerdo
+            con el porcentaje de ocurrencia. Una vez priorizados se realiza el
+            plan para cada uno de ellos.
           </p>
         </div>
 
@@ -99,7 +122,13 @@ export default function PlanDeContingencia() {
           </h2>
           <p>
             El plan de Contingencia debe ser presentado ante la autoridad
-            ambiental donde se realicen las actividades...
+            ambiental donde se realicen las actividades con el fin de que éstas
+            lo conozcan y hagan seguimiento y en caso dado soliciten los
+            respectivos ajustes al mismo. El Plan de contingencia es exigido por
+            las autoridades ambientales regionales, cada una de ellas fija los
+            lineamientos que deben seguirse para la implementación del mismo,
+            por lo que el usuario debe mantener informada a la autoridad
+            respetiva sobre los pormenores del trámite.
           </p>
         </div>
 
@@ -108,7 +137,6 @@ export default function PlanDeContingencia() {
           <h2 className="text-2xl font-bold text-[#000180] mb-4">
             ¿Quiénes deben realizar un Plan de Contingencia?
           </h2>
-
           <p>
             De acuerdo con el Decreto 50 de 2018, deben elaborar y presentar
             para aprobación ante la autoridad ambiental el Plan de Contingencia
@@ -117,7 +145,9 @@ export default function PlanDeContingencia() {
 
           <ul className="list-disc ml-6 space-y-2 mt-4">
             <li>
-              Exploren, exploten, manufacturen, refinen, transformen, procesen…
+              Exploren, exploten, manufacturen, refinen, transformen, procesen,
+              transporten o almacenen hidrocarburos o sustancias nocivas para la
+              salud y para los recursos hidrobiológicos.
             </li>
             <li>
               Actividades sujetas a licenciamiento ambiental o Plan de Manejo
@@ -126,7 +156,10 @@ export default function PlanDeContingencia() {
           </ul>
 
           <p className="mt-6">
-            Si su organización aún no cuenta con un Plan de Contingencia…
+            Si su organización aún no cuenta con un Plan de Contingencia que le
+            permita asegurar la continuidad del negocio en caso de que se
+            materialice una situación de riesgo, consúltenos, aquí le
+            brindaremos asesoría especializada.
           </p>
         </div>
       </div>

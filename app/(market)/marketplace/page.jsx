@@ -7,33 +7,51 @@ import ComoFunciona from "./components/ComoFunciona";
 import Beneficios from "./components/Beneficios";
 import UltimosProductos from "./components/UltimosProductos";
 
-// Metadata completo para App Router
+// ===================== META SEO NIVEL DIOS =====================
 export const metadata = {
   title: "Marketplace | Waste Store – R&R Kelab S.A.S",
   description:
-    "Marketplace digital para la comercialización segura de materiales aprovechables, maquinaria y servicios. Descubra cómo funcionará Waste Store.",
-  keywords:
-    "marketplace residuos, reciclaje digital, materiales aprovechables, economía circular, Waste Store, Colombia",
+    "Marketplace digital para la comercialización segura de materiales aprovechables, maquinaria y servicios en Colombia. Descubra cómo funcionará Waste Store y su contribución a la economía circular.",
+  keywords: [
+    "marketplace residuos",
+    "reciclaje digital",
+    "materiales aprovechables",
+    "economía circular",
+    "Waste Store",
+    "Colombia",
+    "comercialización residuos",
+    "plataforma residuos",
+    "trazabilidad residuos",
+  ],
   authors: [{ name: "R&R Kelab S.A.S" }],
   robots: "index, follow",
   openGraph: {
     title: "Marketplace Waste Store | R&R Kelab S.A.S",
     description:
-      "Comercialice y adquiera materiales aprovechables de forma segura y ágil en el marketplace de Waste Store.",
+      "Comercialice y adquiera materiales aprovechables de forma segura y ágil en el marketplace de Waste Store, impulsando la sostenibilidad y economía circular.",
     url: "https://kelab.com.co/marketplace",
     type: "website",
-    images: ["https://kelab.com.co/preview-marketplace.jpg"],
+    images: [
+      {
+        url: "https://kelab.com.co/preview-marketplace.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Marketplace Waste Store - R&R Kelab",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Marketplace Waste Store",
     description:
-      "Ejemplo del funcionamiento del marketplace digital de Waste Store.",
+      "Descubra el marketplace digital de Waste Store para materiales aprovechables, servicios y maquinaria en Colombia.",
     images: ["https://kelab.com.co/preview-marketplace.jpg"],
   },
   alternates: {
     canonical: "https://kelab.com.co/marketplace",
   },
+  category: "Marketplace, Gestión de Residuos, Economía Circular",
+  publisher: "R&R Kelab S.A.S",
 };
 
 export default function MarketplacePage() {

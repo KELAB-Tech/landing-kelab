@@ -1,6 +1,7 @@
 // app/marketplace/components/HeroMarketplace.jsx
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
@@ -19,7 +20,7 @@ const slides = [
     bgTo: "#000180",
     bgGlow: "#45C93E",
     glow: "0 0 25px rgba(69,201,62,0.6)",
-    imagen: "https://picsum.photos/400/300?eco1",
+    imagen: "/marketplace/hero/reciclaje.jpg",
     eco: true,
   },
   {
@@ -32,7 +33,7 @@ const slides = [
     bgTo: "#45C93E",
     bgGlow: "#ffffff",
     glow: "0 0 30px rgba(255,255,255,0.4)",
-    imagen: "https://picsum.photos/400/300?eco2",
+    imagen: "/marketplace/hero/limpieza.jpg",
   },
   {
     id: 3,
@@ -44,7 +45,7 @@ const slides = [
     bgTo: "#001fb3",
     bgGlow: "#45C93E",
     glow: "0 0 25px rgba(69,201,62,0.5)",
-    imagen: "https://picsum.photos/400/300?eco3",
+    imagen: "/marketplace/hero/joven-operador-con-auriculares.jpg",
     eco: true,
   },
 ];
@@ -67,10 +68,8 @@ export default function HeroMarketplace() {
                 background: `radial-gradient(circle at top left, ${slide.bgGlow}, ${slide.bgFrom}, ${slide.bgTo})`,
               }}
             >
-              {/* OVERLAY OSCURO */}
+              {/* OVERLAY */}
               <div className="absolute inset-0 bg-black/30" />
-
-              {/* RUIDO / TEXTURA */}
               <div className="absolute inset-0 opacity-[0.07] bg-[url('/noise.png')]" />
 
               <div className="relative max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center z-10">
@@ -81,7 +80,7 @@ export default function HeroMarketplace() {
                   transition={{ duration: 0.6 }}
                   className="text-white"
                 >
-                  <h2 className="text-3xl md:text-4xl font-extrabold mb-3 leading-tight">
+                  <h2 className="text-3xl md:text-4xl font-extrabold mb-3">
                     {slide.titulo}
                   </h2>
 
@@ -100,25 +99,29 @@ export default function HeroMarketplace() {
                   </motion.button>
                 </motion.div>
 
-                {/* IMAGEN / SILUETA */}
+                {/* IMAGEN */}
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
                   className="hidden md:flex justify-end relative"
                 >
-                  <img
+                  <Image
                     src={slide.imagen}
                     alt={slide.titulo}
-                    className="h-52 w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
+                    width={320}
+                    height={220}
+                    className="object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
+                    priority={slide.id === 1}
                   />
 
-                  {/* ECO OBSERVANDO */}
                   {slide.eco && (
-                    <img
+                    <Image
                       src="/marketplace/mascota/eco1.png"
-                      className="absolute bottom-0 right-40 h-16 opacity-80"
                       alt="ECO observando"
+                      width={64}
+                      height={64}
+                      className="absolute bottom-0 right-40 opacity-80"
                     />
                   )}
                 </motion.div>
