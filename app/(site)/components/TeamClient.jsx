@@ -8,28 +8,28 @@ export default function TeamClient() {
     {
       name: "Mario Antonio Ruiz Vargas",
       role: "Gerente General",
-      img: "/equipo/mario.webp",
+      img: "/equipo/Mario.webp",
       description:
         "Investigador Junior reconocido por Colciencias en temas de Redes de Corrupción y Ética, Conducta y Comportamiento Organizacional. Más de 15 años de experiencia en el sector educativo y empresarial. Conferencista en Corporate Governance, Gerencia y Gestión del Conocimiento. Docente en Estrategia, Prospectiva y Proyectos",
     },
     {
       name: "Adriana Arevalo Molina",
       role: "Directora de Proyectos",
-      img: "/equipo/adriana.webp",
+      img: "/equipo/Adriana.webp",
       description:
         "Ingeniera ambiental con experiencia en gestión de residuos posconsumo, peligrosos y RCD. Experta en planes de manejo ambiental y gerencia de recursos naturales.",
     },
     {
       name: "Juan David Romero Sanchez",
       role: "Líder Recurso Hídrico",
-      img: "/equipo/juan.webp",
+      img: "/equipo/Juan.webp",
       description:
         "Ingeniero ambiental con experiencia en gestión de recursos hídricos, permisos de vertimientos, reuso de aguas, riesgos ambientales y análisis de calidad de agua, aire y suelo.",
     },
     {
       name: "Stefanny Quiza Veru",
       role: "Profesional Línea de Residuos",
-      img: "/equipo/stefanny.webp",
+      img: "/equipo/Stefanny.webp",
       description:
         "Administradora Ambiental con conocimientos en SIG, producción limpia, economía circular, educación ambiental y formulación de proyectos sostenibles.",
     },
@@ -43,7 +43,7 @@ export default function TeamClient() {
     {
       name: "Astrid Roxanna Moreno Marenco",
       role: "Profesional Especializado",
-      img: "/equipo/astrid.webp",
+      img: "/equipo/Astrid.webp",
       description:
         "Profesional en Química con Maestría y Doctorado. Investigadora Junior Minciencias en materiales adsorbentes. Autora y evaluadora de artículos científicos. Docente universitaria en química orgánica, alimentos, análisis instrumental y química general.",
     },
