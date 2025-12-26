@@ -57,7 +57,7 @@ export default function TeamClient() {
           <motion.h1
             initial={{ opacity: 0, y: -15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
+            transition={{ duration: 0.5 }}
             className="text-4xl md:text-6xl font-extrabold mb-4"
           >
             Nuestro <span className="text-[#45C93E]">Equipo</span>
@@ -76,36 +76,37 @@ export default function TeamClient() {
       </section>
 
       {/* TEAM GRID */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {team.map((person, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden"
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               {/* FOTO */}
-              <div className="w-full h-64 relative">
+              <div className="w-full aspect-square relative">
                 <Image
                   src={person.img}
                   alt={`Foto de ${person.name}, ${person.role}`}
                   fill
-                  className="object-cover object-top rounded-t-2xl"
+                  className="object-cover rounded-t-2xl"
+                  priority={i < 3} // mejora LCP para primeros 3
                 />
               </div>
 
               {/* TEXTO */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-center text-[#001a8a]">
+              <div className="p-6 flex flex-col h-full">
+                <h3 className="text-xl font-bold text-center text-[#001a8a] mb-1">
                   {person.name}
                 </h3>
-                <p className="text-[#003a6b] font-semibold mb-3 text-center">
+                <p className="text-[#003a6b] font-semibold text-center mb-3">
                   {person.role}
                 </p>
-                <p className="text-gray-700 leading-relaxed text-justify">
+                <p className="text-gray-700 leading-relaxed flex-grow text-justify">
                   {person.description}
                 </p>
               </div>
