@@ -43,12 +43,12 @@ export default function NavbarMarketplace() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-6">
         {/* ================= LOGO ================= */}
         <Link
-          href="/"
+          href="/marketplace"
           onClick={closeMenus}
           className="flex items-center gap-0 whitespace-nowrap"
         >
           <Image
-            src="/logos/WS.svg"
+            src="/co-workers/co-logo.svg"
             alt="WasteStore Logo"
             width={70}
             height={70}
@@ -56,7 +56,7 @@ export default function NavbarMarketplace() {
             className="-mr-1 -ml-5"
           />
           <span className="text-2xl font-bold text-[#000180] leading-none">
-            Waste<span className="text-[#45C93E]">Store</span>
+            Co-Workers <span className="text-[#45C93E]">Cloud</span>
           </span>
         </Link>
 

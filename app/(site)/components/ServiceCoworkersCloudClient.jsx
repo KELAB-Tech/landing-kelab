@@ -7,6 +7,7 @@ import {
   Recycle,
   MapPin,
   LineChart,
+  ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,6 +50,21 @@ export default function ServiceCoworkersCloudClient() {
             La plataforma que está revolucionando la comercialización de
             residuos aprovechables en Colombia.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35, duration: 0.45 }}
+            className="mt-10 flex justify-center"
+          >
+            <Link
+              href="/co-workers-cloud"
+              className="inline-flex items-center gap-3 bg-[#45C93E] hover:bg-[#399334] text-[#00134f] px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition"
+            >
+              Ingresar al Centro Comercial
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </motion.div>
         </div>
       </section>
 
