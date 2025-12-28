@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { companies } from "@/app/(market)/marketplace/data/companies";
+import { companies } from "../data/companies";
 
 export const metadata = {
   title: "Empresas asociadas | Co-Workers Cloud",
@@ -32,7 +32,7 @@ export default function CloudEmpresasPage() {
           {companies.map((company) => (
             <Link
               key={company.id}
-              href={`/co-workers-cloud/empresas/${company.slug}`}
+              href="https://marketplace-kelab-b4si.vercel.app/categorias"
               className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition overflow-hidden"
             >
               <div className="p-8 flex flex-col items-center text-center">

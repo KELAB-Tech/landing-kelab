@@ -1,4 +1,3 @@
-// app/(market)/marketplace/data/categories.js
 export const categories = [
   { slug: "carton", name: "Cartón" },
   { slug: "pet", name: "PET" },

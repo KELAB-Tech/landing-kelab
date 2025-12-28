@@ -60,7 +60,7 @@ export default function HeroCloud() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Link
-              href="/marketplace"
+              href="https://marketplace-kelab-b4si.vercel.app/"
               className="bg-[#45C93E] hover:bg-[#399334] text-white px-7 py-3 rounded-xl font-semibold shadow-lg transition"
             >
               Entrar a Waste Store

@@ -105,7 +105,7 @@ export default function CloudNavbar() {
 
         {/* CTA */}
         <Link
-          href="/marketplace"
+          href="https://marketplace-kelab-b4si.vercel.app/"
           className="hidden lg:inline-flex items-center rounded-xl bg-[#45C93E] px-4 py-2 text-sm font-semibold text-white shadow hover:bg-[#399334] transition"
         >
           Waste Store
