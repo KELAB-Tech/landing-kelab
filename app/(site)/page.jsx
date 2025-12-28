@@ -4,7 +4,6 @@ import Services from "@/app/(site)/components/sections/Services";
 import Clients from "@/app/(site)/components/sections/Clients";
 import Contact from "@/app/(site)/components/sections/Contact";
 import Aliados from "@/app/(site)/components/sections/Aliados";
-import Innovation from "@/app/(site)/components/sections/Innovation";
 
 // ===================== META SEO HOME NIVEL DIOS =====================
 export const metadata = {
