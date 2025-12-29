@@ -133,9 +133,7 @@ export default function GestoresPage() {
           {gestoresMock.map((gestor) => (
             <Link
               key={gestor.nombre}
-              href={`/marketplace/company/${gestor.nombre
-                .toLowerCase()
-                .replace(/\s+/g, "-")}`}
+              href="https://marketplace-kelab-b4si.vercel.app/categorias"
               className="group block rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-lg transition"
             >
               {/* Header */}
