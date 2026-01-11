@@ -180,10 +180,10 @@ export default function Contact() {
               )}
             </div>
 
-            {/* ✅ reCAPTCHA (sin tocar estilos) */}
+            {/* HOSTGATOR */}
             <div
               className="g-recaptcha"
-              data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              data-sitekey="6LfxDx4sAAAAAOmzRJstxe_0K3-G6aoqK0VT7t84"
             />
 
             {captchaError && (
