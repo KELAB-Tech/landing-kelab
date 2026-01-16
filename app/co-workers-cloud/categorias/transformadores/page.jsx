@@ -6,7 +6,7 @@ import {
   ArrowRight,
   Store,
   Layers,
-} from "lucide-react";
+} from "lucide-react";{}
 
 const transformadoresMock = [
   {
