@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  reactCompiler: true,
 
   images: {
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
-
-  reactCompiler: true,
 };
 
 export default nextConfig;
