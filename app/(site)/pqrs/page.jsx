@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 
 export default function PQRS() {
@@ -15,20 +15,24 @@ export default function PQRS() {
     reset,
   } = useForm();
 
-  const [status, setStatus] = useState(null);
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error | captcha-error
   const [radicado, setRadicado] = useState(null);
 
+  // ✅ Inicializar EmailJS
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+  }, []);
+
   const onSubmit = async (data) => {
-    // 🔐 Validar que reCAPTCHA esté cargado
-    if (typeof window === "undefined" || !window.grecaptcha) {
+    // 🔐 Validar reCAPTCHA
+    if (!window.grecaptcha) {
       console.error("❌ reCAPTCHA no cargado");
       setStatus("error");
       return;
     }
 
-    // 🔐 Validar que el usuario marcó el captcha
-    const captchaResponse = window.grecaptcha.getResponse();
-    if (!captchaResponse) {
+    const captchaToken = window.grecaptcha.getResponse();
+    if (!captchaToken) {
       setStatus("captcha-error");
       return;
     }
@@ -39,7 +43,7 @@ export default function PQRS() {
       const radicadoGenerado = `PQRS-${Date.now()}`;
       setRadicado(radicadoGenerado);
 
-      const result = await emailjs.send(
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_PQRS_ID,
         {
@@ -50,10 +54,7 @@ export default function PQRS() {
           message: data.mensaje,
           radicado: radicadoGenerado,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
-
-      console.log("✅ Email enviado:", result);
 
       setStatus("success");
       reset();
@@ -88,6 +89,7 @@ export default function PQRS() {
               <span className="text-white">PQRS en </span>
               <span className="text-[#45C93E]">R&R Kelab</span>
             </h2>
+
             <p className="text-gray-200 mb-10 text-lg leading-relaxed max-w-md">
               Diligencia este formulario para enviar tus Peticiones, Quejas,
               Reclamos o Sugerencias. Nuestro equipo dará respuesta en máximo 15
@@ -196,8 +198,8 @@ export default function PQRS() {
             {/* reCAPTCHA */}
             <div
               className="g-recaptcha"
-              data-sitekey="6LfxDx4sAAAAAOmzRJstxe_0K3-G6aoqK0VT7t84"
-            ></div>
+              data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            />
 
             {/* Botón */}
             <button
@@ -222,7 +224,8 @@ export default function PQRS() {
 
             {status === "success" && (
               <p className="text-[#45C93E] font-medium mt-2 text-center">
-                ✅ Tu PQRS fue enviada con éxito. Radicado: {radicado}
+                ✅ Tu PQRS fue enviada con éxito. <br />
+                Radicado: <strong>{radicado}</strong>
               </p>
             )}
 

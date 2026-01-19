@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 
 export default function Contact() {
@@ -15,25 +15,31 @@ export default function Contact() {
     reset,
   } = useForm();
 
-  const [status, setStatus] = useState(null);
-  const [captchaError, setCaptchaError] = useState(null);
+  const [status, setStatus] = useState("idle");
+  // idle | sending | success | error | captcha-error
+
+  // ✅ Inicializar EmailJS una sola vez
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+  }, []);
 
   const onSubmit = async (data) => {
+    if (status === "sending") return;
+
+    // 🔐 Validar reCAPTCHA
+    if (!window.grecaptcha) {
+      console.error("❌ reCAPTCHA no cargado");
+      setStatus("error");
+      return;
+    }
+
+    const captchaToken = window.grecaptcha.getResponse();
+    if (!captchaToken) {
+      setStatus("captcha-error");
+      return;
+    }
+
     try {
-      setCaptchaError(null);
-
-      // ✅ Validar reCAPTCHA antes de enviar
-      if (!window.grecaptcha) {
-        setCaptchaError("reCAPTCHA no cargó correctamente.");
-        return;
-      }
-
-      const token = window.grecaptcha.getResponse();
-      if (!token) {
-        setCaptchaError("Por favor confirma que no eres un robot.");
-        return;
-      }
-
       setStatus("sending");
 
       await emailjs.send(
@@ -44,7 +50,6 @@ export default function Contact() {
           email: data.email,
           message: data.mensaje,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
 
       setStatus("success");
@@ -58,7 +63,7 @@ export default function Contact() {
 
   return (
     <>
-      {/* ✅ Script reCAPTCHA (NO afecta estilos) */}
+      {/* ✅ Script reCAPTCHA */}
       <Script
         src="https://www.google.com/recaptcha/api.js"
         strategy="afterInteractive"
@@ -70,8 +75,8 @@ export default function Contact() {
       >
         {/* Fondos */}
         <div className="absolute inset-0 will-change-transform">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#45C93E]/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#45C93E]/10 rounded-full blur-2xl"></div>
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#45C93E]/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#45C93E]/10 rounded-full blur-2xl" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 relative z-10 items-start">
@@ -100,6 +105,7 @@ export default function Contact() {
                 </div>
                 <span className="ml-8 text-gray-300">300 401 4299</span>
               </li>
+
               <li className="flex flex-col">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#45C93E]" />
@@ -109,6 +115,7 @@ export default function Contact() {
                   318 665 9462 — 313 671 5765
                 </span>
               </li>
+
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#45C93E]" />
                 <span className="text-lg">ambiental@kelab.com.co</span>
@@ -129,7 +136,7 @@ export default function Contact() {
               Envíanos un mensaje
             </h3>
 
-            {/* Inputs */}
+            {/* Nombre */}
             <div>
               <label className="block font-semibold mb-1">Nombre</label>
               <input
@@ -137,7 +144,7 @@ export default function Contact() {
                 {...register("nombre", {
                   required: "Este campo es obligatorio",
                 })}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base md:text-lg focus:ring-2 focus:ring-[#45C93E] outline-none"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#45C93E] outline-none"
               />
               {errors.nombre && (
                 <p className="text-red-500 text-sm mt-1">
@@ -146,6 +153,7 @@ export default function Contact() {
               )}
             </div>
 
+            {/* Email */}
             <div>
               <label className="block font-semibold mb-1">
                 Correo electrónico
@@ -155,7 +163,7 @@ export default function Contact() {
                 {...register("email", {
                   required: "Ingrese un correo válido",
                 })}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base md:text-lg focus:ring-2 focus:ring-[#45C93E] outline-none"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#45C93E] outline-none"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm mt-1">
@@ -164,6 +172,7 @@ export default function Contact() {
               )}
             </div>
 
+            {/* Mensaje */}
             <div>
               <label className="block font-semibold mb-1">Mensaje</label>
               <textarea
@@ -171,7 +180,7 @@ export default function Contact() {
                 {...register("mensaje", {
                   required: "Cuéntanos brevemente tu necesidad",
                 })}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base md:text-lg focus:ring-2 focus:ring-[#45C93E] outline-none resize-none"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#45C93E] outline-none resize-none"
               />
               {errors.mensaje && (
                 <p className="text-red-500 text-sm mt-1">
@@ -180,15 +189,11 @@ export default function Contact() {
               )}
             </div>
 
-            {/* HOSTGATOR */}
+            {/* reCAPTCHA */}
             <div
               className="g-recaptcha"
-              data-sitekey="6LfxDx4sAAAAAOmzRJstxe_0K3-G6aoqK0VT7t84"
+              data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
             />
-
-            {captchaError && (
-              <p className="text-red-500 text-sm text-center">{captchaError}</p>
-            )}
 
             {/* Botón */}
             <button
@@ -204,12 +209,19 @@ export default function Contact() {
               {status === "sending" ? "Enviando..." : "Enviar mensaje"}
             </button>
 
-            {/* Estado */}
+            {/* Estados */}
+            {status === "captcha-error" && (
+              <p className="text-red-500 text-sm text-center">
+                ⚠️ Por favor valida el reCAPTCHA
+              </p>
+            )}
+
             {status === "success" && (
               <p className="text-[#45C93E] font-medium mt-2 text-center">
                 ✅ Tu mensaje fue enviado con éxito.
               </p>
             )}
+
             {status === "error" && (
               <p className="text-red-500 font-medium mt-2 text-center">
                 ❌ Hubo un error al enviar el mensaje. Intenta de nuevo.
