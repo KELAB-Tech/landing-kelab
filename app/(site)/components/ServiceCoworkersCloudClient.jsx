@@ -391,7 +391,7 @@ export default function ServiceCoworkersCloudClient() {
             </p>
 
             {/* Botón con Glow */}
-            <Link href="/services/waste-store" passHref>
+            <Link href="https://marketplace-kelab-b4si.vercel.app/" passHref>
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
