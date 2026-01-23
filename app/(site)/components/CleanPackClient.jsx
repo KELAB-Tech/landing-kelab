@@ -37,24 +37,25 @@ export default function CleanPackClient() {
             CLEAN <span className="text-[#45C93E]">PACK</span>
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-lg md:text-2xl max-w-3xl mx-auto text-gray-200"
-          >
-            El plan colectivo de envases y empaques que impulsa la
-            sostenibilidad empresarial.
-          </motion.p>
+          <h1 className="md:text-2xl">
+            Plan Colectivo <span className="text-[#45C93E]">Clean Pack</span>{" "}
+            para Gestión de Residuos Empresariales en Colombia
+          </h1>
+          <h2 className="sr-only">
+            Plan colectivo de envases y empaques para cumplimiento ambiental
+            empresarial
+          </h2>
         </div>
       </section>
 
       {/* DESCRIPCIÓN */}
       <section className="max-w-5xl mx-auto px-6 py-16 leading-relaxed text-lg text-justify">
         <p>
-          Somos un Plan Colectivo de Residuos de Envases y Empaques administrado
-          por <strong>R&R Kelab S.A.S.</strong>, creado para dar cumplimiento a
-          la legislación ambiental vigente.
+          Somos un Plan Colectivo de Residuos de Envases y Empaques para
+          empresas en Colombia, administrado por{" "}
+          <strong>R&R Kelab S.A.S.</strong>, diseñado para garantizar el
+          cumplimiento de la legislación ambiental vigente y la economía
+          circular.
         </p>
         <br />
         <p>
@@ -67,6 +68,9 @@ export default function CleanPackClient() {
           Clean Pack garantiza certificación, sostenibilidad y circularidad en
           la gestión de residuos aprovechables.
         </p>
+        <Link href="/" className="text-[#000180] py-4 font-semibold underline">
+          nuestros servicios ambientales
+        </Link>
       </section>
 
       {/* CICLO DE VIDA */}
