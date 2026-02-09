@@ -227,12 +227,12 @@ export default function CleanPackClient() {
             {[
               {
                 title: "Importancia de la separación de residuos",
-                link: "/blogs/importancia-separacion-residuos",
+                link: "/blog/importancia-separacion-residuos",
               },
-              { title: "Planes Colectivos", link: "/blogs/planes-colectivos" },
+              { title: "Planes Colectivos", link: "/blog/planes-colectivos" },
               {
                 title: "Responsabilidad Extendida del Productor",
-                link: "/blogs/responsabilidad-extendida-productor",
+                link: "/blog/responsabilidad-extendida",
               },
             ].map((item, i) => (
               <Link
