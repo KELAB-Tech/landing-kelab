@@ -29,7 +29,7 @@ export default function Navbar() {
 
   const serviceLinks = [
     { name: "Trámites Ambientales", path: "/services/tramites-ambientales" },
-    { name: "Clean Pack", path: "/services/clean-pack" },
+    { name: "Clean Pack", path: "/clean-pack" },
     { name: "Co-Workers Cloud", path: "/services/co-workers-cloud" },
     { name: "Sostenibilidad", path: "/services/economia-circular" },
   ];
