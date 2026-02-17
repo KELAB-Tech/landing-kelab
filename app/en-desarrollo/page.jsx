@@ -43,7 +43,7 @@ export default function EnDesarrollo() {
 
         {/* CTA de retorno */}
         <Link
-          href="/clean-pack"
+          href="/"
           className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-[#000180] text-white font-semibold shadow-md hover:bg-[#000180]/90 transition"
         >
           Volver a Clean Pack

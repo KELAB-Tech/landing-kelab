@@ -12,6 +12,7 @@ export default function sitemap() {
     "/faq",
     "/services",
     "/co-workers-cloud",
+    "/clean-pack",
 
     // Servicios
     "/services/clean-pack",

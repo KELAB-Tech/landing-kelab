@@ -93,10 +93,7 @@ export default function CloudNavbar() {
             </AnimatePresence>
           </li>
 
-          <NavItem
-            href="https://kelab.com.co/paginas/inicio"
-            label="Administra tu tienda"
-          />
+          <NavItem href="en-desarrollo" label="Administra tu tienda" />
           <NavItem href="#beneficios" label="Beneficios" />
           <NavItem href="/faq" label="FAQ" />
           <NavItem href="/blog" label="Blog" />
