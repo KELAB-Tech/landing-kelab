@@ -79,3 +79,19 @@ body {
   border-color: #45c93e;
   box-shadow: 0 0 0 2px rgba(69, 201, 62, 0.25);
 }
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradientMove 6s ease infinite;
+}
