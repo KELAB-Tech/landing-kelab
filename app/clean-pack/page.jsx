@@ -3,7 +3,6 @@ import TargetCleanPack from "./components/TargetCleanPack";
 import ProblemaCleanPack from "./components/ProblemaCleanPack";
 import SolucionCleanPack from "./components/SolucionCleanPack";
 import ComoFuncionaCleanPack from "./components/ComoFuncionaCleanPack";
-import NormativaCleanPack from "./components/NormativaCleanPack";
 import BeneficiosCleanPack from "./components/BeneficiosCleanPack";
 import CTACleanPack from "./components/CTACleanPack";
 

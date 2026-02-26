@@ -38,7 +38,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://kelab.com.co/preview.jpg",
+        url: "https://kelab.com.co/logo.png",
         width: 1200,
         height: 630,
         alt: "R&R Kelab S.A.S – Gestión Integral de Residuos",
@@ -50,7 +50,7 @@ export const metadata = {
     title: "R&R Kelab S.A.S | Gestión Integral de Residuos y Sostenibilidad",
     description:
       "Soluciones sostenibles e innovadoras para la gestión integral de residuos y economía circular en Colombia.",
-    images: ["https://kelab.com.co/preview.jpg"],
+    images: ["https://kelab.com.co/logo.png"],
   },
   alternates: {
     canonical: "https://kelab.com.co/",

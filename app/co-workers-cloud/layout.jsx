@@ -1,58 +1,68 @@
-// app/co-workers-cloud/layout.jsx
-import CloudNavbar from "./components/CloudNavbar";
-import CloudFooter from "./components/CloudFooter";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
+// ===================== META SEO CO-WORKERS CLOUD =====================
 export const metadata = {
   title:
-    "Co-Workers Cloud | Centro Comercial y Marketplace de Residuos | Colombia",
-  description: "Co-Workers Cloud es el ecosistema tecnológico líder...",
+    "Co-Workers Cloud | Centro Comercial Digital de Residuos Aprovechables en Colombia",
+  description:
+    "Co-Workers Cloud es el primer ecosistema digital en Colombia para la comercialización de residuos aprovechables. Conecta asociaciones, gestores y empresas transformadoras con autonomía, trazabilidad y seguridad transaccional.",
   keywords: [
-    "co-workers cloud",
-    "gestión de residuos",
-    "marketplace de residuos",
-    "plataforma residuos Colombia",
-    "comercialización de residuos",
-    "trazabilidad de residuos",
+    "Co-Workers Cloud",
+    "residuos aprovechables",
     "economía circular",
-    "sostenibilidad",
-    "Clean Pack",
+    "plataforma digital residuos",
+    "centro comercial digital",
+    "gestión de residuos",
+    "logística de reciclaje",
+    "trazabilidad residuos",
+    "bodegas virtuales",
+    "marketplace residuos",
+    "reciclaje Colombia",
+    "R&R Kelab",
+    "consultoría ambiental",
+    "seguridad transaccional residuos",
+    "transformación sostenible",
   ],
+  authors: [{ name: "R&R Kelab S.A.S", url: "https://kelab.com.co" }],
+  robots: "index, follow",
   openGraph: {
-    title: "Co-Workers Cloud | Centro Comercial y Marketplace de Residuos",
-    description: "Plataforma innovadora para la trazabilidad...",
+    title:
+      "Co-Workers Cloud | Ecosistema Digital de Residuos Aprovechables en Colombia",
+    description:
+      "Conecte actores de la cadena de reciclaje en un ecosistema digital con autonomía, trazabilidad y seguridad. Co-Workers Cloud transforma la gestión de residuos en oportunidades de negocio.",
+    url: "https://kelab.com.co/co-workers-cloud",
     type: "website",
-    url: "https://kelab.com.co/servicios/co-workers-cloud/home",
     images: [
       {
-        url: "https://kelab.com.co/static/logos/WS.svg",
+        url: "https://kelab.com.co/co-workers/co-logo.svg",
         width: 1200,
         height: 630,
-        alt: "Co-Workers Cloud – Marketplace de Residuos",
+        alt: "Co-Workers Cloud - Plataforma digital de residuos aprovechables",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Co-Workers Cloud | Centro Comercial y Marketplace de Residuos",
+    title: "Co-Workers Cloud | Plataforma Digital de Residuos Aprovechables",
     description:
-      "Descubre Co-Workers Cloud, la plataforma tecnológica para comercializar, gestionar y dar trazabilidad a residuos aprovechables en Colombia.",
-    images: ["https://kelab.com.co/static/logos/WS.svg"],
+      "El primer centro comercial digital de residuos aprovechables en Colombia. Autonomía, trazabilidad y seguridad para asociaciones, gestores y empresas transformadoras.",
+    images: ["https://kelab.com.co/co-workers/co-logo.svg"],
   },
   alternates: {
-    canonical: "https://kelab.com.co/servicios/co-workers-cloud/home",
+    canonical: "https://kelab.com.co/co-workers-cloud",
   },
-  robots: "index, follow",
-  authors: [{ name: "R&R Kelab", url: "https://kelab.com.co" }],
-  publisher: "R&R Kelab",
-  category: "Servicios, Marketplace, Gestión de Residuos, Economía Circular",
+  publisher: "R&R Kelab S.A.S",
+  category:
+    "Residuos Aprovechables, Economía Circular, Plataforma Digital, Reciclaje, Colombia",
 };
 
 export default function CoWorkersCloudLayout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <CloudNavbar />
-      <main className="flex-1">{children}</main>
-      <CloudFooter />
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-grow">{children}</main>
+      <Footer />
     </div>
   );
 }
