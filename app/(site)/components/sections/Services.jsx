@@ -111,7 +111,11 @@ export default function Services() {
               </p>
 
               <Link
-                href={`/services/${service.slug}`}
+                href={
+                  service.slug === "clean-pack"
+                    ? "/clean-pack"
+                    : `/services/${service.slug}`
+                }
                 className="inline-block bg-[#45C93E] hover:bg-[#399334] text-white font-semibold px-4 py-2 text-sm rounded-lg transition-colors"
                 itemProp="url"
               >

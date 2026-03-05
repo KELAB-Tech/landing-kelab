@@ -4,7 +4,7 @@ export default function ComoFuncionaCleanPack() {
   const pasos = [
     {
       number: "01",
-      image: "/cleanpack/beneficios/afiliacion.jpg",
+      image: "/cleanpack/beneficios/Afiliacion.jpg",
       title: "Afiliación y diagnóstico",
       description:
         "Formalizamos la vinculación al plan colectivo y evaluamos el alcance de sus obligaciones REP.",

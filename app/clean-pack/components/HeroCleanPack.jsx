@@ -77,7 +77,7 @@ export default function HeroCleanPack() {
                         transition={{ duration: 0.6 }}
                         className="max-w-3xl text-left"
                       >
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+                        <h1 className="text-4xl sm:text-5xl mt-6 md:text-6xl font-bold text-white leading-tight">
                           {slide.title}
                         </h1>
 
