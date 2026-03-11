@@ -62,7 +62,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            A través de <strong>Co Workers Cloud</strong>, estamos desarrollando
+            A través de <strong>Co-Workers Cloud</strong>, estamos desarrollando
             un
             <span className="font-semibold"> ecosistema digital</span> que
             conecta a los actores de la cadena de residuos aprovechables,
