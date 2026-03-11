@@ -47,8 +47,8 @@ export default function ServiceCoworkersCloudClient() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl max-w-3xl mx-auto opacity-90"
           >
-            La plataforma que está revolucionando la comercialización de
-            residuos aprovechables en Colombia.
+            Ecosistema digital para articular la cadena de residuos
+            aprovechables.
           </motion.p>
 
           <motion.div
@@ -63,7 +63,7 @@ export default function ServiceCoworkersCloudClient() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#45C93E] hover:bg-[#399334] text-[#00134f] px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition"
             >
-              Ingresar al Centro Comercial
+              Explorar el ecosistema
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
@@ -79,10 +79,14 @@ export default function ServiceCoworkersCloudClient() {
             </h2>
 
             <p className="text-gray-700 leading-relaxed text-justify">
-              En R&R KE-LAB S.A.S. sabemos que la gestión de residuos sólidos es
-              un reto, pero también una oportunidad para la Economía Circular.
-              Por eso creamos Co-Workers Cloud, el ecosistema tecnológico que
-              transforma la cadena de gestión de residuos en Colombia.
+              Co-Workers Cloud es un ecosistema digital desarrollado por R&R
+              Kelab que busca articular a los actores de la cadena de residuos
+              aprovechables en un solo entorno tecnológico. Este sistema integra
+              productores, gestores y transformadores dentro de una plataforma
+              que facilita la conexión, la trazabilidad y la valorización de m
+              ateriales aprovechables. A través de herramientas digitales, el
+              ecosistema permite mejorar la gestión de residuos, optimizar
+              procesos de logística inversa y fortalecer la economía circular.
             </p>
           </div>
 
@@ -125,19 +129,12 @@ export default function ServiceCoworkersCloudClient() {
 
         <div className="max-w-4xl mx-auto text-justify space-y-6">
           <p>
-            Marketplace de residuos aprovechables, bodegas virtuales,
-            trazabilidad logística, paneles administrativos y módulos para
-            recicladores, gestores y empresas.
-          </p>
-
-          <p>
-            Soluciona la desconexión entre actores, falta de información y altos
-            costos logísticos.
-          </p>
-
-          <p>
-            Presenta arquitectura, procesos, roadmap, costos y beneficios del
-            sistema nacional de economía circular.
+            El desarrollo de Co Workers Cloud se e ncuentra respaldado por la
+            patente de invención: “ Método para realizar la articulación de las
+            organizaciones involucradas en la cadena de residuos sólidos ” NC
+            2022/0007259 Esta innovación propone un nuevo modelo de articulación
+            empresarial basado en un ecos istema digital que conecta actores,
+            servicios y oportunidades dentro del sector.
           </p>
         </div>
 
@@ -149,20 +146,20 @@ export default function ServiceCoworkersCloudClient() {
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto text-justify">
           {[
             {
-              icon: <ShoppingBag className="w-8 h-8 text-[#003a6b]" />,
-              text: "Tu propia tienda: asociaciones, gestores y transformadores pueden vender dentro de la plataforma.",
+              icon: <Recycle className="w-8 h-8 text-[#003a6b]" />,
+              text: "Espacio donde los actores del sector ofertan y demandan materiales aprovechables, servicios y maquinaria, fortaleciendo la comercialización en la cadena de residuos.",
             },
             {
               icon: <LineChart className="w-8 h-8 text-[#003a6b]" />,
-              text: "Bodegas virtuales con inventario digital, fotos, cantidades y precios.",
+              text: "Mecanismo que ayuda a las empresas a cumplir con la normativa de responsabilidad extendida del productor, articulando gestores y procesos ambientales.",
             },
             {
               icon: <ShoppingBag className="w-8 h-8 text-[#003a6b]" />,
-              text: "Comercio a tu medida: catálogo y precios personalizados.",
+              text: "Herramientas para mejorar la trazabilidad de residuos y fortalecer estrategias de aprovechamiento y sostenibilidad.",
             },
             {
               icon: <Recycle className="w-8 h-8 text-[#003a6b]" />,
-              text: "Eficiencia total: todo centralizado en un solo sistema.",
+              text: "Coordinación de procesos para recuperar, transportar y valorizar residuos aprovechables dentro de una red conectada.",
             },
           ].map((item, i) => (
             <div

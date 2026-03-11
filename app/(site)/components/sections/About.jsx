@@ -23,7 +23,7 @@ export default function About() {
         >
           <Image
             src={equipo}
-            alt="Proyecto Co-workes-cloud"
+            alt="Proyecto Co-workers Cloud"
             className="rounded-2xl shadow-lg object-cover w-full h-[450px]"
             itemProp="image"
             loading="lazy"
@@ -54,30 +54,30 @@ export default function About() {
             className="text-gray-700 leading-relaxed text-lg text-justify"
             itemProp="description"
           >
-            <span className="font-semibold">R&R KELAB S.A.S</span>, gracias a su
-            compromiso con la <span className="font-semibold">innovación</span>,
-            cuenta con una <span className="font-semibold">patente</span>{" "}
-            registrada bajo el número{" "}
-            <span className="font-semibold">NC2022/0007259</span>:
-            <strong> Co-workes-cloud</strong>.
+            En <span className="font-semibold">R&R Kelab</span> impulsamos
+            soluciones que integran
+            <span className="font-semibold"> tecnología</span>,{" "}
+            <span className="font-semibold">sostenibilidad</span>y{" "}
+            <span className="font-semibold">articulación empresarial</span>.
           </p>
 
           <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            Este proyecto de innovación digital revoluciona la{" "}
-            <span className="font-semibold">
-              comercialización de residuos aprovechables
-            </span>{" "}
-            en Colombia, integrando a todos los actores de la cadena en un solo
-            espacio virtual.
+            A través de <strong>Co Workers Cloud</strong>, estamos desarrollando
+            un
+            <span className="font-semibold"> ecosistema digital</span> que
+            conecta a los actores de la cadena de residuos aprovechables,
+            facilitando la{" "}
+            <span className="font-semibold">logística inversa</span>, la{" "}
+            <span className="font-semibold">trazabilidad</span> y la{" "}
+            <span className="font-semibold">valorización de materiales </span>
+            dentro de un mismo entorno.
           </p>
 
           <p className="text-gray-700 leading-relaxed text-lg text-justify">
-            Introduce el concepto de un{" "}
-            <span className="font-semibold">
-              centro comercial digital de residuos
-            </span>
-            , un ecosistema integral que incluye materiales, servicios y
-            maquinaria para una economía más sostenible.
+            Esta innovación propone transformar la forma en que las
+            organizaciones gestionan sus residuos, promoviendo modelos más
+            eficientes y alineados con la{" "}
+            <span className="font-semibold">economía circular</span>.
           </p>
 
           <a
