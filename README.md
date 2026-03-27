@@ -67,21 +67,6 @@ Dependiendo de tu implementación (puedes ajustar esto), por ejemplo:
 - **Backend (si aplica):** API REST
 - **Deploy:** Vercel / VPS
 
----
-
-## 📁 Estructura del Proyecto (Ejemplo)
-
-```
-/app
-  /components
-  /services
-  /clientes
-  /contacto
-/public
-  /clientes
-  /images
-/styles
-```
 
 ---
 
