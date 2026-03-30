@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#00214A] leading-tight mb-5"
         >
-          El primer gran centro comercial digital
+          El primer gran ecosistema digital
           <br className="hidden md:block" />
           de residuos aprovechables en Colombia.
         </motion.h1>

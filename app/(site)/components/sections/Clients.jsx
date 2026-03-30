@@ -37,6 +37,14 @@ const logos = [
   "/clientes/GSD.webp",
   "/clientes/Gourmet.webp",
   "/clientes/Flexopol.webp",
+  "/clientes/drycol.webp",
+  "/clientes/laboratorios.webp",
+  "/clientes/mercados-unidos.webp",
+  "/clientes/proteos.webp",
+  "/clientes/smart-cooking.webp",
+  "/clientes/soluciones-nutritivas.webp",
+  "/clientes/tecniproyectos.webp",
+  "/clientes/bioempak.webp",
 ];
 
 export default function Clients() {
@@ -71,7 +79,7 @@ export default function Clients() {
         <div className="overflow-hidden relative">
           <motion.div
             className="flex gap-12 items-center will-change-transform"
-            animate={{ x: ["0%", "-450%"] }}
+            animate={{ x: ["0%", "-600%"] }}
             transition={{
               ease: "linear",
               duration,

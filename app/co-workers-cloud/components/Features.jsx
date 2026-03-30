@@ -6,23 +6,23 @@ import { Layers, Network, ShieldCheck } from "lucide-react";
 const architecture = [
   {
     number: "01",
-    title: "Capa Comercial",
+    title: "Plan Colectivo",
     description:
-      "Marketplace empresarial donde compañías publican, negocian y gestionan materiales sin intermediación centralizada, bajo un entorno estructurado que optimiza visibilidad, liquidez operativa y conexión directa entre oferta y demanda industrial.",
+      "Facilita el cumplimiento de la normativa ambiental a través de la articulación con un sistema colectivo, permitiendo a las empresas gestionar de forma adecuada sus obligaciones frente a residuos. ",
     icon: Layers,
   },
   {
     number: "02",
-    title: "Capa Operativa",
+    title: "Marketplace de Residuos",
     description:
-      "Bodegas virtuales, georreferenciación y logística integrada con trazabilidad estructurada en tiempo real, permitiendo control de inventario, seguimiento de movimientos y coordinación eficiente entre actores de la red.",
+      "Conecta a productores, gestores y transformadores en un solo lugar, facilitando la compra, venta y aprovechamiento de materiales reciclables, así como la oferta de servicios asociados.",
     icon: Network,
   },
   {
     number: "03",
-    title: "Capa Transaccional",
+    title: "Sostenibilidad",
     description:
-      "Infraestructura de pagos, validaciones y protocolos de seguridad bajo estándares de ciberseguridad, diseñada para garantizar integridad contractual, protección de datos y cumplimiento normativo en cada operación.",
+      "Permite a las empresas gestionar su desempeño ambiental mediante herramientas como informes de sostenibilidad y medición de huella de carbono.",
     icon: ShieldCheck,
   },
 ];
@@ -47,12 +47,13 @@ export default function Architecture() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#00214A] leading-tight">
-            Infraestructura tecnológica modular
+            Infraestructura digital para la articulación de la cadena de
+            residuos
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            Diseño estructural por capas que integra comercio, operación y
-            seguridad dentro de un ecosistema escalable.
+            Integra sostenibilidad, cumplimiento y aprovechamiento en un solo
+            entorno digital.
           </p>
         </div>
 
