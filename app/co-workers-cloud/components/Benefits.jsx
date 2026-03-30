@@ -97,7 +97,7 @@ export default function Benefits() {
           </h2>
 
           <p className="max-w-4xl mx-auto text-lg md:text-xl text-white/70 leading-relaxed">
-            Nuestra arquitectura transforma residuos industriales en activos
+            Nuestra arquitectura transforma residuos aprovechables en activos
             estratégicos, integrando empresas dentro de una red estructurada,
             trazable y preparada para expansión LATAM y mercados
             internacionales.

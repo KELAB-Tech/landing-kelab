@@ -87,7 +87,7 @@ export default function HeroCleanPack() {
 
                         <div className="mt-10 flex gap-5">
                           <a
-                            href="#contacto"
+                            href="/"
                             className="px-8 py-4 bg-[#45C93E] hover:bg-[#399334] transition text-white font-semibold rounded-2xl shadow-xl text-lg"
                           >
                             Afiliar mi empresa

@@ -45,22 +45,6 @@ export default function SolucionCleanPack() {
             description="Asesoría estratégica frente a REP, Resolución 803 de 2024 y procesos de subsanación de vigencias anteriores."
           />
         </div>
-
-        {/* Bloque diferenciador institucional */}
-        <div className="mt-24 max-w-4xl mx-auto border border-gray-200 rounded-3xl p-12 text-center bg-white shadow-sm">
-          <div className="h-1 w-24 bg-[#000180] rounded-full mx-auto mb-8" />
-
-          <h3 className="text-2xl font-semibold text-[#000180] mb-6">
-            Más eficiente que un plan individual
-          </h3>
-
-          <p className="text-gray-600 leading-relaxed text-lg">
-            Clean Pack permite cumplir metas regulatorias con menor carga
-            administrativa, menor exposición jurídica y una estructura técnica
-            consolidada. Una solución estratégica frente a la complejidad
-            operativa del cumplimiento ambiental.
-          </p>
-        </div>
       </div>
     </section>
   );
