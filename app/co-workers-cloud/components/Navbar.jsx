@@ -125,7 +125,7 @@ export default function Navbar() {
 
         {/* CTA DESKTOP */}
         <motion.a
-          href="en-desarrollo"
+          href="https://cloud.kelab.com.co/"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.25 }}
           className="hidden md:block px-6 py-2 rounded-full bg-[#45C93E] hover:bg-[#3fb437] text-white font-semibold shadow-[0_4px_14px_rgba(69,201,62,0.25)] transition-all duration-300"
@@ -175,7 +175,7 @@ export default function Navbar() {
             )}
 
             <a
-              href="en-desarrollo"
+              href="https://cloud.kelab.com.co/"
               onClick={() => setOpen(false)}
               className="block w-full text-center px-5 py-3 rounded-full bg-[#45C93E] text-white font-semibold"
             >

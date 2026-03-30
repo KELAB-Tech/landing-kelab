@@ -23,7 +23,7 @@ const services = [
     title: "Co-Workers Cloud",
     slug: "co-workers-cloud",
     description:
-      "Plataforma virtual de residuos aprovechables. Todos en un solo lugar.",
+      "Ecosistema digital de residuos aprovechables. Todos en un solo lugar.",
     image: "/services/service4.webp",
   },
   {
