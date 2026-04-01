@@ -41,7 +41,10 @@ export default function CTA() {
   };
 
   return (
-    <section className="relative py-36 px-6 bg-gradient-to-b from-[#000000] to-[#000180] text-white">
+    <section
+      id="contact"
+      className="relative py-36 px-6 bg-gradient-to-b from-[#000000] to-[#000180] text-white"
+    >
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           Establezca una alianza estratégica

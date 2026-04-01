@@ -86,7 +86,7 @@ export default function ServiceCoworkersCloudClient() {
               solo entorno, facilitando la conexión, el aprovechamiento de
               materiales y la gestión sostenible de residuos.
             </p>
-            <p>
+            <p className="text-gray-700 leading-relaxed text-justify">
               Este modelo nace como una solución innovadora para fortalecer la
               economía circular, permitiendo que los actores del sector
               interactúen, generen oportunidades y optimicen sus procesos en un
@@ -113,8 +113,10 @@ export default function ServiceCoworkersCloudClient() {
       {/* Waste Store */}
       <section className="bg-gradient-to-b from-[#000180] via-[#000169] to-[#45C93E] text-white py-20 px-6 text-center">
         <h2 className="text-3xl font-extrabold mb-8">
-          <span className="text-white">¿Qué puedes encontrar </span>
-          <span className="text-[#45C93E]">en el ecosistema?</span>
+          <span className="text-white">¿Qué puedes encontrar en el </span>
+          <span className="text-[#45C93E]">
+            ecosistema digital Co Workers Cloud?
+          </span>
         </h2>
 
         <motion.div
@@ -123,7 +125,7 @@ export default function ServiceCoworkersCloudClient() {
           transition={{ duration: 0.45 }}
         >
           <Image
-            src="/services/cloud/waste.png"
+            src="/services/cloud/wastes.png"
             alt="Waste Store"
             width={800}
             height={600}
@@ -140,23 +142,31 @@ export default function ServiceCoworkersCloudClient() {
           {[
             {
               icon: <Recycle className="w-8 h-8 text-[#003a6b]" />,
-              text: "Plan Colectivo: Permite a las empresas cumplir con la normativa ambiental de manera articulada, facilitando la gestión de sus obligaciones frente a residuos a través de un sistema colectivo.",
+              title: "Plan Colectivo",
+              text: "Permite a las empresas cumplir con la normativa ambiental de manera articulada, facilitando la gestión de sus obligaciones frente a residuos a través de un sistema colectivo.",
             },
             {
               icon: <LineChart className="w-8 h-8 text-[#003a6b]" />,
-              text: "Marketplace de residuos: Espacio donde productores, gestores y transformadores pueden conectarse para la compra, venta y aprovechamiento de materiales reciclables, así como la oferta de servicios asociados dentro de la cadena de residuos.",
+              title: "Marketplace de residuos",
+              text: "Espacio donde productores, gestores y transformadores pueden conectarse para la compra, venta y aprovechamiento de materiales reciclables, así como la oferta de servicios asociados dentro de la cadena de residuos.",
             },
             {
               icon: <ShoppingBag className="w-8 h-8 text-[#003a6b]" />,
-              text: "Sostenibilidad: Incluye herramientas para la gestión ambiental empresarial, como informes de sostenibilidad y medición de huella de carbono CO2, permitiendo a las organizaciones fortalecer su desempeño ambiental.",
+              title: "Sostenibilidad",
+              text: "Incluye herramientas para la gestión ambiental empresarial, como informes de sostenibilidad y medición de huella de carbono CO2, permitiendo a las organizaciones fortalecer su desempeño ambiental.",
             },
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white text-[#001a8a] p-5 rounded-xl shadow-lg flex gap-4"
+              className={`bg-white text-[#001a8a] p-5 rounded-xl shadow-lg flex gap-4 ${
+                i === 2 ? "md:col-span-2 md:max-w-xl mx-auto" : ""
+              }`}
             >
               {item.icon}
-              <p>{item.text}</p>
+              <div>
+                <p className="font-bold mb-1">{item.title}:</p>
+                <p>{item.text}</p>
+              </div>
             </div>
           ))}
         </div>

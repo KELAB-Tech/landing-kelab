@@ -65,7 +65,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <Link
-            href="#cta"
+            href="#contact"
             className="inline-flex items-center justify-center px-8 md:px-10 py-3 md:py-4 rounded-full bg-[#45C93E] text-white font-semibold text-base md:text-lg shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#3bb833]"
           >
             Únete a la transformación

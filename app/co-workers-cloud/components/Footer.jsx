@@ -67,14 +67,14 @@ export default function Footer() {
               <p className="text-gray-500 text-xs uppercase tracking-wider">
                 Línea Principal
               </p>
-              <p className="text-white">300 401 4299</p>
+              <p className="text-white">318 665 9462</p>
             </div>
 
             <div>
               <p className="text-gray-500 text-xs uppercase tracking-wider">
                 Líneas Secundaria
               </p>
-              <p className="text-white">318 665 9462 — 313 671 5765</p>
+              <p className="text-white">300 401 4299 — 313 671 5765</p>
             </div>
 
             <div>

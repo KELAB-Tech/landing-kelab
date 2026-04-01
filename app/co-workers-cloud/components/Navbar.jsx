@@ -11,7 +11,7 @@ const sections = [
   { id: "inicio", label: "Inicio" },
   { id: "caracteristica", label: "Características" },
   { id: "beneficios", label: "Beneficios" },
-  { id: "cta", label: "Contacto" },
+  { id: "contact", label: "Contacto" },
   { id: "faq", label: "FAQ" },
   { href: "/", label: "Sobre Nosotros" },
 ];
